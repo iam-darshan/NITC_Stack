@@ -1,0 +1,23 @@
+export const materials = [
+    {
+        id:1,
+        courseCode: "MA1006E",
+        category: "notes",
+        title: "C++ Homework",
+        fileURL: "/materials/material1.pdf"
+    },
+    {
+        id:2,
+        courseCode: "MA1006E",
+        category: "notes",
+        title: "Linux Cheatsheet",
+        fileURL: "/materials/material2.pdf"
+    },
+    {
+        id:3,
+        courseCode: "MA1006E",
+        category: "notes",
+        title: "Datatype Size",
+        fileURL: "/materials/material3.pdf"
+    }
+]
