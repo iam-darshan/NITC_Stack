@@ -1,10 +1,14 @@
 from fastapi import FastAPI,UploadFile,Form
 from fastapi.middleware.cors import CORSMiddleware
-import shutil,uuid,json
 from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+import shutil,uuid,json
+from pydantic import BaseModel
+
 
 app = FastAPI()
 app.mount("/files",StaticFiles(directory="upload"),name="files")
+
 
 origin = [
     "http://localhost:5173",
@@ -43,10 +47,18 @@ def uploadFile(
         "title":title,
         "courseCode":courseCode,
         "category":categoryID,
-        "fileURL":"http://127.0.0.1:8000/files/" + docName + ".pdf"
+        "fileURL":f"http://127.0.0.1:8000/files/{docName}.pdf"
     }
     materials.append(newMaterial)
     with open("./materials.json","w") as f:
         json.dump(materials,f,indent=4)
 
     return {"message" : "File saved"}
+
+@app.get("/download/{id}")
+def downloadFile(id : uuid.UUID):
+    return FileResponse(
+    path=f"./upload/{id}.pdf",
+    filename="notes.pdf",
+    content_disposition_type="attachment"
+)

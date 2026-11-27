@@ -1,11 +1,13 @@
 import { ArrowLeft } from 'lucide-react'
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 function Upload() {
     const { courseCode, categoryID } = useParams()
     const [fileTitle, setFileTitle] = useState("")
     const [file, setFile] = useState()
+
+    const navigate = useNavigate()
 
     const handleUpload = async (e) => {
         e.preventDefault();
@@ -34,6 +36,13 @@ function Upload() {
                 body: formData
             })
             console.log(await res.json())
+
+            if(res.ok){
+                alert("File uploaded")
+                navigate(`/courses/${courseCode}/${categoryID}`)
+            } else {
+                alert("File upload failed")
+            }
         } catch (e){
             console.error(e)
         }

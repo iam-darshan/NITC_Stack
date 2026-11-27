@@ -19,5 +19,53 @@
         "category": "notes",
         "title": "Datatype Size",
         "fileURL": "/materials/material3.pdf"
+    },
+    {
+        "id": "f1cdf2cb-5797-450d-8788-0d516ccf5c22",
+        "title": "uplaod",
+        "courseCode": "MA1006E",
+        "category": "notes",
+        "fileURL": "http://127.0.0.1:8000/files/f1cdf2cb-5797-450d-8788-0d516ccf5c22.pdf"
+    },
+    {
+        "id": "eac28544-b2d5-47ba-8699-8246400b1644",
+        "title": "maths 1",
+        "courseCode": "MA1002E",
+        "category": "notes",
+        "fileURL": "http://127.0.0.1:8000/files/eac28544-b2d5-47ba-8699-8246400b1644.pdf"
+    },
+    {
+        "id": "34063a29-3481-444c-9def-fb8ee642a4d9",
+        "title": "mat",
+        "courseCode": "MA1002E",
+        "category": "http://127.0.0.1:8000/files/34063a29-3481-444c-9def-fb8ee642a4d9.pdf"
+    },
+    {
+        "id": "f1958154-c865-4e3d-8168-b5caf3f1d9cd",
+        "title": "mat",
+        "courseCode": "MA1002E",
+        "category": "notes",
+        "fileURL": "http://127.0.0.1:8000/files/f1958154-c865-4e3d-8168-b5caf3f1d9cd.pdf"
+    },
+    {
+        "id": "758b3108-f60e-47b1-881a-2e066d41bd7a",
+        "title": "fsd",
+        "courseCode": "MA1002E",
+        "category": "notes",
+        "fileURL": "http://127.0.0.1:8000/files/758b3108-f60e-47b1-881a-2e066d41bd7a.pdf"
+    },
+    {
+        "id": "33e2f2f6-80c2-4788-bfa2-a5b8929bde1d",
+        "title": "fsdf",
+        "courseCode": "MA1002E",
+        "category": "notes",
+        "fileURL": "http://127.0.0.1:8000/files/33e2f2f6-80c2-4788-bfa2-a5b8929bde1d.pdf"
+    },
+    {
+        "id": "063618b6-2122-4a72-a282-af717f7a0129",
+        "title": "dssdf",
+        "courseCode": "MA1002E",
+        "category": "notes",
+        "fileURL": "http://127.0.0.1:8000/files/063618b6-2122-4a72-a282-af717f7a0129.pdf"
     }
 ]
